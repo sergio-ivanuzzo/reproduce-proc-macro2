@@ -1,0 +1,17 @@
+[package]
+name = "tentacli-packet"
+version = "3.0.0"
+edition = "2021"
+authors = ["Sergio Ivanuzzo <sergio.ivanuzzo@gmail.com>"]
+
+[lib]
+name = "tentacli_packet"
+path = "src/lib.rs"
+proc-macro = true
+
+[dependencies]
+# https://github.com/dtolnay/proc-macro-workshop#debugging-tips
+syn = { version = "2.0.49", features = ["full"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+structmeta = "0.3.0"
